@@ -46,5 +46,5 @@ jobs:
             {
               "environment": "${{ inputs.stage }}",
               "key": "models.embedder",
-              "value": "${{ steps.promote.outputs.identifier }}"
+              "value": "${{ steps.promote.outputs.version }}"
             }
