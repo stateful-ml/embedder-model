@@ -8,6 +8,7 @@ class Embedder(mlflow.pyfunc.PythonModel):
         pass
 
     def predict(self, context, model_input):
-        return np.random.random(len(model_input))
+        return np.random.random((len(model_input), 200))
+
 
 set_model(Embedder())
